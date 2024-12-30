@@ -1,0 +1,43 @@
+:host {
+  margin-top: auto;
+}
+
+footer {
+  border-top: var(--border-main);
+  color: var(--text-color-dark);
+}
+
+.sec-social {
+  border-bottom: var(--border-main);
+  .social {
+    a {
+      display: block;
+      color: var(--text-color-dark);
+      transition: 0.2s;
+      &:hover {
+        color: var(--Jasper);
+        transform: scale(1.2);
+        // i {
+        // }
+      }
+    }
+  }
+}
+
+.sec-links {
+  p {
+    a {
+      display: block;
+      color: var(--text-color-dark);
+      transition: 0.2s;
+      &:hover {
+        color: var(--Jasper);
+        transform: translateX(3px) translateY(-3px);
+      }
+    }
+  }
+}
+
+.copy-right {
+  border-top: var(--border-main);
+}

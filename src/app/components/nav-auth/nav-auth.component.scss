@@ -1,0 +1,8 @@
+.navbar {
+  padding-inline: 50px;
+  box-shadow: var(--shadow-main);
+  // border-bottom: 1px solid rgba(0, 0, 0, 70%);
+  @media (max-width: 768px) {
+    padding-inline: 35px;
+  }
+}

@@ -1,0 +1,18 @@
+.sec-sign-in {
+  height: 359px;
+}
+
+.sign-in-form {
+  @media (max-width: 768px) {
+    width: 75% !important;
+  }
+}
+
+.errors {
+  text-align: right;
+  color: var(--Boston-University-Red);
+}
+
+.message-err {
+  color: var(--Jasper);
+}

@@ -1,0 +1,23 @@
+.navbar {
+  padding-inline: 50px;
+  box-shadow: var(--shadow-main);
+  // border-bottom: 1px solid rgba(0, 0, 0, 70%);
+}
+
+.nav-link {
+  transition: var(--main-transition);
+  &:hover,
+  &:focus {
+    color: var(--CG-Red);
+  }
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0px 1px 3px var(--Terra-cotta-light);
+}
+
+.cart-icon {
+  display: block;
+  color: var(--Jasper);
+  font-size: 26px;
+}

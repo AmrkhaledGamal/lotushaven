@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --Jasper: #d1423d;
+  --CG-Red: #d93630;
+  --Terra-Cotta: #e86661;
+  --Terra-cotta-light: #e865616a;
+  --Boston-University-Red: #cb0d06;
+  --Ghost-White: #f8f9fa;
+  --text-color-dark: rgba(0, 0, 0, 70%);
+  --shadow: 3px 2px 5px rgb(0 0 0 / 20%);
+  --shadow-main: 1px 1px 3px var(--Jasper);
+  --border-main: 1px solid var(--Terra-cotta-light);
+  --radius: 8px;
+  --main-transition: 0.4s;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Ghost-White);
+}
+
+.active_link {
+  color: var(--Jasper);
+  // transition: var(--main-transition);
+  // &:hover {
+  //   ::after {
+  //     width: 0;
+  //   }
+  // }
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   width: 100%;
+  //   height: 2px;
+  //   background-color: var(--Jasper);
+  // }
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-btn {
+  background-color: var(--Jasper);
+  padding: 10px 15px;
+  border: none;
+  border-radius: var(--radius);
+  color: white;
+  transition: var(--main-transition);
+  &:hover {
+    background-color: var(--CG-Red);
+    color: var(--text-color-dark);
+  }
+  &:disabled {
+    background-color: var(--Terra-Cotta);
+    color: white;
+  }
+}
+
+.product {
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  transition: var(--main-transition);
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
